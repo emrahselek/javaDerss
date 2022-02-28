@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _14_split_StringKullanilarakArrayOlusturma {
 
     public static void main(String[] args) {
-        //Bir stringi arraya donusturmek icin kullanlan split methodudur. Bu method yardimi ile bir string degeri
+        //Bir string'i arraya donusturmek icin kullanlan split methodudur. Bu method yardimi ile bir string degeri
         //icindeki datalari istedigimiz gibi parcalara bolebiliyor ve parcalardanda bir tane array elde etmis
         //oluyoruz.
 
@@ -18,7 +18,7 @@ public class _14_split_StringKullanilarakArrayOlusturma {
         System.out.println(array[3]);
         System.out.println(array[4]);
 
-        // length : Bir arratin kac elemendan olustugunu length ifadesini kullanarak ogrenebiliriz
+        // length : Bir array'in kac elemendan olustugunu length ifadesini kullanarak ogrenebiliriz
         System.out.println(array.length); //--> 5
 
         String ifade = "Ben JAVAYI seviyorum";
@@ -32,7 +32,7 @@ public class _14_split_StringKullanilarakArrayOlusturma {
         System.out.println(cumleler.length);
         System.out.println(Arrays.toString(cumleler));
 
-        //Kullanicidan bir metin yazmasi gerekir. Elde ettiginiz stringi . ifadesine gore parcalar ayirip
+        //Kullanicidan bir metin yazmasi gerekir. Elde ettiginiz string'i . ifadesine gore parcalar ayirip
         //kac cumleden olustugu kullanicaya soylenir ve kac karakterden olustuguda yine kullaniciya soylenebilir.
 
 

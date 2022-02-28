@@ -1,12 +1,18 @@
 package emrah;
 
+import java.util.Scanner;
+
 public class Day01_Palindrome {
 
     public static void main(String[] args) {
-        String str = "nurses run";
-        str = str.replace(" ", "").toLowerCase();
-        String rverse = "";
 
+        //1.way
+        Scanner scan = new Scanner(System.in);
+        System.out.println("lutfen string giriniz");//ey edip adanada pide ye
+        String str = scan.nextLine().replace(" ","").toLowerCase();
+//        String str = "nurses run";
+//        str = str.replace(" ", "").toLowerCase();
+        String rverse = "";
         for( int i=str.length()-1; i >= 0; i-- ){
             rverse = rverse + str.charAt(i);
         }
@@ -15,7 +21,38 @@ public class Day01_Palindrome {
         }else {
             System.out.println(str + " is not a palindrome");
         }
+
+        //2.way
+        palindrome(str);
+        palindrome("ey edip adanada pide ye");
+
+        //3.way
+        String cool = enterString();
+        palindrome(cool);
+
+         // palindrome(str)); --> enterSting methodunu kullanarak methodun icindeki str degerini String olarak
+         // methodun icine gonderdi. Ekstradan bir String deger yazamamiza gerek kalmiyor. " palindrome(enterString()); "
+
     }
 
+    public static String enterString( ){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter string");
+        String strm = scan.nextLine().replace(" ", "").toLowerCase();
+        return strm;
+    }
+
+    public static void palindrome(String entry){
+        String reverse2="";
+        for(int i=entry.length()-1; i>=0; i--){
+            reverse2 = reverse2 + entry.charAt(i);
+        }
+        if(entry.equals(reverse2)){
+            System.out.println(entry + "  is a palindrome");
+        }else{
+            System.out.println(entry + " is NOT a palindrome");
+        }
+
+    }
 
 }

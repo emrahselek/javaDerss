@@ -3,10 +3,10 @@ package Day01;
 import java.util.Arrays;
 
 public class _12_Array {
-    //Birden fazla datayi bir arada tuttugumuz yapilardir.
+
     public static void main(String[] args) {
-        // Birden fazla datayi bir arada tuttugumuz yapilardir.
-        // Kac tane data tutmak istiyorsaniz bunu arraya yazmaniz gerekiyor.
+        // Birden fazla data'yi bir arada tuttugumuz yapilardir.
+        // Kac tane data tutmak istiyorsaniz bunu array'a yazmaniz gerekiyor.
         int sayi = 20;
         String isim = "Orcun";
 
@@ -19,7 +19,7 @@ public class _12_Array {
         System.out.println(Arrays.toString(isimler2));
         System.out.println(isimler2[1]);
 
-        // Array icerisine data eklmeke icin indexleri kullaniriz. Indexler her zaman
+        // Array icerisine data eklemek icin indexleri kullaniriz. Indexler her zaman
         // sifirdan basladigini unutmayalim.
         // ornek : isimler[indexnumarasi] seklinde yazilmasi gerekir.
         System.out.println(sayilar1[0]); // --> 10
@@ -28,12 +28,14 @@ public class _12_Array {
         System.out.println(sayilar1[3]);
         System.out.println(sayilar1[4]);
 
-        // Arrayin icindeki datayi degistirmek icin. Degistirmek istersek index bilgisini yazarak yeni datayi eklememiz yeterli olacaktir.
+        // Arrayin icindeki data'yi degistirmek istersek index bilgisini yazarak yeni datayi eklememiz yeterli olacaktir.
         sayilar1[0] = 100;
         sayilar1[1] = 110;
         sayilar1[2] = 120;
         sayilar1[3] = 130;
         sayilar1[4] = 140;
+        System.out.println(Arrays.toString(sayilar1));
+        System.out.println(sayilar1[2]);
 
         // Arrayleri olusturup sonradan arraye eklemek istedigimiz
         int[] sayilar2 = new int[5];
