@@ -21,7 +21,7 @@ public class Day03_LeapYear_Method {
     public static void leapMethod(int year){
         if(year%100==0 && year%400==0){
             System.out.println("leap year");
-        }else if(year%100!=0 & year%4==0){
+        }else if(year%100!=0 && year%4==0){
             System.out.println("leap year");
         }else {
             System.out.println("NOT leap year");
