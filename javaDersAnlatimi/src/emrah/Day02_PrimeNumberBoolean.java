@@ -6,36 +6,36 @@ public class Day02_PrimeNumberBoolean {
 
     //prime number
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        int emrah=scano();
-        boolean opopo=primeNumberMn(emrah);
+        int intox = scan();
+        boolean istrue = primeNumberMth(intox);
 
-        System.out.println(opopo);
+        System.out.println(istrue);
 
     }
 
-    public static int scano(){
-        Scanner scannn=new Scanner(System.in);
-        System.out.println("gir loo");
+    public static int scan() {
+        Scanner scannn = new Scanner(System.in);
+        System.out.println("enter a number");
         int user = scannn.nextInt();
         return user;
     }
 
-    public static boolean primeNumberMn(int number){
-        int count=0;
-        boolean sonuc=true;
-        for(int i=2; i<number; i++){
-            if(number % i ==0){
+    public static boolean primeNumberMth(int number) {
+        int count = 0;
+        boolean sonuc = true;
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
                 count++;
             }
         }
-        if(number<=0){
-            sonuc=false;
-        }else if(number==1 || count==0){
-            sonuc=true;
-        }else{
-            sonuc=false;
+        if (number <= 0) {
+            sonuc = false;
+        } else if (number == 1 || count == 0) {
+            sonuc = true;
+        } else {
+            sonuc = false;
         }
 
         return sonuc;
