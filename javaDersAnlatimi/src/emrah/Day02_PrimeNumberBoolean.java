@@ -2,7 +2,7 @@ package emrah;
 
 import java.util.Scanner;
 
-public class PracticeX {
+public class Day02_PrimeNumberBoolean {
 
     //prime number
 
