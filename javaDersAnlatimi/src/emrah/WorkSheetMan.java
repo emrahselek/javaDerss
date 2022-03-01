@@ -1,9 +1,10 @@
 package emrah;
 
-import java.util.Scanner;
-
 public class WorkSheetMan {
 
+public static void main(String[] args) {
 
 
+
+    }
 }
