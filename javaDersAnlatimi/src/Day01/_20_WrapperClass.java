@@ -11,7 +11,7 @@ public class _20_WrapperClass {
     float       Float
     double      Double
     boolean     Boolean
-    char        CHARACTER
+    char        Character
      */
     public static void main(String[] args) {
         int sayi = 587788;
