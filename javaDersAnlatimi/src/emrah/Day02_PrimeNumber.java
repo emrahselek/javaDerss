@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Day02_PrimeNumber {
 
         public static void main(String[] args) {
-            //prime number conditions:
+            //prime number is divided by 1 and itself. and just positive whole number.
+            // conditions:
             // must be bigger than 0,
             // not zero,
             // not negative number,

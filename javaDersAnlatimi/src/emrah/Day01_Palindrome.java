@@ -3,19 +3,18 @@ package emrah;
 import java.util.Scanner;
 
 public class Day01_Palindrome {
-
+    //Palindrome is reading characters backward as same forward.
     public static void main(String[] args) {
 
         //1.way
-        Scanner scan = new Scanner(System.in);
-        System.out.println("lutfen string giriniz");//ey edip adanada pide ye
-        String str = scan.nextLine().replace(" ","").toLowerCase();
-//        String str = "nurses run";
-//        str = str.replace(" ", "").toLowerCase();
+        String str = "ey edip adanada pide ye";
+        str = str.replace(" ", "").toLowerCase();
         String rverse = "";
+
         for( int i=str.length()-1; i >= 0; i-- ){
             rverse = rverse + str.charAt(i);
         }
+
         if ( str.equals(rverse)){
             System.out.println(str + " is a palindrome");
         }else {
