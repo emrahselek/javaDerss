@@ -2,7 +2,7 @@ package _Konular;
 
 public class _36_LocalveInstance {
     /*
-        Local ve Istance Degiskenler ( Variables )
+        Local ve Instance Degiskenler ( Variables )
         Bir class icerisindeki her taraftan erisiebilen degiskenler instance variables olarak degerlendirilir.
         bir degiskeni herhangi bir method icerisinde kullanabilirsem instance variable olarak geciyor. Instance
         variablelar class'a ait olurlar.

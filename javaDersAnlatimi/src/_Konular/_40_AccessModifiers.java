@@ -13,6 +13,12 @@ public class _40_AccessModifiers {
     Degisken yada methodlara nerden erisilebilir nereden erisilemez bunu belirten belirteclerdir
     Degislem yada methodlara nereden erisilebilir nereden erisilemez bunu belirten belirteclerdir.
 
+                CLASS       PACKAGE     SUBCLASS    GLOBAL
+    PUBLIC      X           X           X           X
+    PROTECTED   X           X           X           -
+    DEFAULT     X           X           -           -
+    PRIVATE     X           -           -           -
+
 
      */
     public static void main(String[] args) {
